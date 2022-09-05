@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./script.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="overlay display" id="overlay"></div>
+    <div class="sign-modal display" id="sign-modal">
+      <div class="H">
+        <h3>Sign up</h3>
+
+        <button class="close-modal" id="close-modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <hr class="hr" />
+      <br />
+      <div class="input-box">
+        <div class="username-div">
+          <label for="username">Username</label>
+          <br />
+          <input type="text" class="username" placeholder="YourUsername" />
+        </div>
+        <div class="password-div">
+          <label for="password">Password</label>
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="password"
+            maxlength="4"
+          />
+        </div>
+        <br />
+        <div class="confirm-pw">
+          <label for="confirm">Confirm Password</label>
+          <input
+            type="password"
+            name="password"
+            id="c-password"
+            class="C-password"
+            maxlength="4"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="input-valid"></div>
+      <hr class="hr" />
+      <br />
+      <div class="intructions">
+        <p>
+          <small
+            >NOTE:Input your preffered Username,Input your password, the
+            password field only takes in 4 characters</small
+          >
+        </p>
+      </div>
+
+      <div class="submit-box">
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+    <!-- ////////////// main app -->
+    <div class="container">
+      <header class="welcome-login">
+        <div class="welcome">Welcome to RabaTrack</div>
+
+        <div class="input-box2">
+          <input type="text" class="login-username" />
+          <input
+            type="password"
+            name="raba-Password"
+            id="raba-PasswordID"
+            class="raba-Password"
+            maxlength="4"
+          />
+          <button class="sign-in">Sign in</button>
+        </div>
+      </header>
+      <div class="No-acc">
+        Don't have an account, <span class="click-here">click here</span> to
+        register
+      </div>
+
+      <main>
+        <div class="amount-input">
+          <input
+            type="number"
+            name="amount"
+            id="exp-amount"
+            class="exp-amount"
+          />
+          <button><i class="fa-solid fa-bowl-food"></i></button>
+
+          <button><i class="fa-solid fa-glass-water"></i></button>
+
+          <button><i class="fa-solid fa-shirt"></i></button>
+
+          <button><i class="fa-solid fa-gears"></i></button>
+
+          <button><i class="fa-solid fa-globe"></i></button>
+        </div>
+        <br />
+
+        <div class="expenses">
+          <div class="expense-table">
+            <div class="food col">
+              <div class="head">Food</div>
+              <!-- <div class="row food-row">300</div> -->
+            </div>
+
+            <div class="drink col">
+              <div class="head">Drink</div>
+              <!-- <div class="row drink-row">300</div> -->
+            </div>
+
+            <div class="clothing col">
+              <div class="head">Clothing</div>
+              <!-- <div class="row clothing-row">300</div> -->
+            </div>
+            <div class="maintenance col">
+              <div class="head">Maintenance</div>
+              <!-- <div class="row maintenance-row">300</div> -->
+            </div>
+            <div class="other col">
+              <div class="head">Other</div>
+              <!-- <div class="row other-row">300</div> -->
+            </div>
+          </div>
+
+          <div class="exp-total">
+            <div class="tot-food tot">
+              <p><small> Total Food</small></p>
+              <h4 class="food-tot">*****</h4>
+            </div>
+            <div class="tot-food tot">
+              <p><small> Total Drink</small></p>
+              <h4 class="drink-tot">*****</h4>
+            </div>
+            <div class="tot-food tot">
+              <p><small> Total Clothing</small></p>
+              <h4 class="clothing-tot">*****</h4>
+            </div>
+            <div class="tot-food tot">
+              <p><small> Total Maintenance</small></p>
+              <h4 class="maintenance-tot">*****</h4>
+            </div>
+            <div class="tot-food tot">
+              <p><small> Total Others</small></p>
+              <h4 class="others-tot">*****</h4>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
